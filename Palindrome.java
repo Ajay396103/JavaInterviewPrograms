@@ -10,7 +10,7 @@ public class Palindrome {
         int length=sc.nextInt();
         System.out.println("Please enter the length of the distinct characters needed");
         int distinct=sc.nextInt();
-        //Check for the length of the palindrome possible with the distinct characters
+        //Check for the possibility of palindrome of length 'length' with distinct 'distinct' characters
        if(length>0 && distinct > 0 && length!=distinct)
        {
            int palindromeLength=(length%2==0 ? length/2 : ((length/2)+1));
@@ -33,6 +33,7 @@ public class Palindrome {
 
 
     }
+    //Form a string based on length 'N'
     private static String nPalindrome(int length,int distinct, int palindromeLength)
     {
         Character[] resultList= new Character[length];
