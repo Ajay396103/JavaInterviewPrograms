@@ -14,12 +14,9 @@ public class Palindrome {
        if(length>0 && distinct > 0 && length!=distinct)
        {
            int palindromeLength=(length%2==0 ? length/2 : ((length/2)+1));
-           System.out.println(palindromeLength);
-           String result=new String();
            if(distinct<=palindromeLength)
            {
-               result=nPalindrome(length,distinct,palindromeLength);
-               System.out.println("A palindrome string of length: "+ length + " with " + distinct + " distinct characters formed is : " + result  );
+               System.out.println("A palindrome string of length: "+ length + " with " + distinct + " distinct characters formed is : " + nPalindrome(length,distinct,palindromeLength)  );
            }
            else
            {
