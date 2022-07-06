@@ -25,11 +25,7 @@ public class MaxUniqSubString {
     public static Boolean isDistinct(String ss)
     {
         Set<Character> charsSet = ss.chars()
-                .mapToObj(e->(char)e).collect(Collectors.toSet());
-        if(charsSet.size()==ss.length())
-            {
-                return true;
-            }
-        return false;
+                .mapToObj(e->(char)e).collect(Collectors.toSet()); 
+        return (charsSet.size()==ss.length());
     }
 }
